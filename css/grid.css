@@ -1,0 +1,89 @@
+.grid-col-main{
+	display: flex;
+	flex-direction: column;
+	max-width: 65%;
+	margin-top: 6rem;
+}
+
+#citations{
+	min-width: 100%;
+}
+
+#citations .grid-col-main{
+	display: flex;
+	flex-direction: column;
+	margin-top: 6rem;
+	max-width: 65%;
+	margin-left: 5%;
+}
+
+.grid-row{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 100%;
+}
+
+.grid-col-1of2{
+	max-width: 50%;
+}
+
+.grid-col-1of2:first-of-type{
+	margin-right: 2%;
+}
+
+#gridStructure .grid-row{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 100%;
+
+	justify-content: space-between;
+	margin-top: 1rem;
+}
+
+#gridStructure .grid-col-1of2{
+	background-color: #F0F0F0;
+	width: 49%;
+	text-align: center;
+	padding: 1rem 0 1rem 0;
+}
+
+#gridStructure .grid-col-1of2:first-of-type{
+	margin-right: 1%;
+}
+
+#gridStructure .grid-col-1of5{
+	background-color: #F0F0F0;
+	width: 19.5%;
+	text-align: center;
+	padding: 1rem 0 1rem 0;
+}
+
+#gridStructure .grid-col-1of6{
+	background-color: #F0F0F0;
+	width: 16.5%;
+	text-align: center;
+	padding: 1rem 0 1rem 0;
+}
+
+#gridStructure .grid-col-1of4{
+	background-color: #F0F0F0;
+	width: 25%;
+	text-align: center;
+	padding: 1rem 0 1rem 0;
+}
+
+#gridStructure .grid-col-3of5{
+	background-color: #F0F0F0;
+	width: 60%;
+	text-align: center;
+	padding: 1rem 0 1rem 0;
+}
+
+#gridStructure .grid-col-2of5{
+	background-color: #F0F0F0;
+	width: 39%;
+	text-align: center;
+	padding: 1rem 0 1rem 0;
+}
