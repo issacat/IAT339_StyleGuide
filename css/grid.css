@@ -24,12 +24,25 @@
 	max-width: 100%;
 }
 
+
 .grid-col-1of2{
 	max-width: 50%;
 }
 
 .grid-col-1of2:first-of-type{
 	margin-right: 2%;
+}
+
+.grid-col-1of5{
+	width: 19.5%;
+}
+
+.grid-col-2of12{
+	width: 16.5%;
+}
+
+.grid-col-3of12{
+	width: 25%;
 }
 
 .grid-col-4of12{

@@ -7,11 +7,14 @@
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<title>P01 Style Guide</title>
 </head>
+
 <body>
+	<!-- ========== STYLESHEET MAIN NAVIGATION ========== -->
 	<header>
 		<div class="grid-row">
 			<a href="#" class="navName"><h1>Style Guide</h1></a>
 		</div><!--grid-row-->
+
 		<div class="grid-row">
 			<ul class="mainNavigation">
 				<li><a href="index.html">Style Guide</a></li>
@@ -24,126 +27,110 @@
 		</div>
 	</header>
 
+	<!-- ========== STYLESHEET SUB-NAVIGATION ========== -->
 	<ul class="navigation">
-		<li><a href="#">Combined Elements</a></li>
+		<li><a href="#combinedElements">Combined Elements</a></li>
+		<li><a href="#gridStructure">Grid Structure</a></li>
 	</ul>
 
+	<!-- ========== COMBINED ELEMENTS ========== -->
 	<div class="grid-col-main">
 		<section id="combinedElements">
 			<h2>Combined Elements</h2>
+
+			<!-- ========== Main Navigation ========== -->
 			<h4>Main Navigation</h4>
 			<p>As seen on this style guide</p>
 
+			<pre>	
+			&lt;header>
+				&lt;div class="grid-row">
+					&lt;h1>Style Guide&lt;/h1>
+				&lt;/div><!--grid-row-->
+				&lt;div class="grid-row">
+					&lt;ul class="mainNavigation">
+						&lt;li>&lt;a href="#">Style Guide&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="">Wireframes&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="">Citations&lt;/a>&lt;/li>
+					&lt;/ul>
 
-	<pre>	
-	&lt;header>
-		&lt;div class="grid-row">
-			&lt;h1>Style Guide&lt;/h1>
-		&lt;/div><!--grid-row-->
-		&lt;div class="grid-row">
-			&lt;ul class="mainNavigation">
-				&lt;li>&lt;a href="#">Style Guide&lt;/a>&lt;/li>
-				&lt;li>&lt;a href="">Wireframes&lt;/a>&lt;/li>
-				&lt;li>&lt;a href="">Citations&lt;/a>&lt;/li>
-			&lt;/ul>
+					&lt;a href="" class="buyButton">Buy&lt;/a>
+				&lt;/div>
+			&lt;/header>
+			</pre>
 
-			&lt;a href="" class="buyButton">Buy&lt;/a>
-		&lt;/div>
-	&lt;/header>
-	</pre>
-
-	<h4>Product Listing</h4>
-	<div class="grid-row">
-		<div class="grid-col-1of5">
-			<figure class="item">
-				<a href="#"><img src="img/perfume_rose.jpg" alt="picture of rose perfume" class="item-img"></a>
-				<figcaption>
-					<ul class="item-description">
-						<li><a href="#" class="item-link">Product Name by Brand Name</a></li>
-						<li>$123.45</li>
-					</ul>
-				</figcaption>
-			</figure>
-		</div>
-	</div>
-
-	<h4>Product Details</h4>
-	<div class="grid-row">
-		<div class="grid-col-1of2">
-			<img src="img/perfume_rose.jpg" alt="picture of rose perfume">
-		</div><!--closes grid-col-1of2-->
-
-		<div class="grid-col-1of2">
-
-			<h1 class="brandH1">Product Name</h1>
-			<h1 class="brandH1">$123.45</h1>
-			<ul>
-				<li>A brief description of what this is</li>
-				<li>Some more details</li>
-				<li>Even more details</li>
-			</ul>
-
+			<!-- ========== Product Listing ========== -->
+			<h4>Product Listing</h4>
 			<div class="grid-row">
-				<a href="#" class="buttonGroup">1</a>
-				<a href="#" class="buttonGroup">2</a>
-				<a href="#" class="buttonGroup">3</a>
-			</div><!--closes grid-row-->
-
-			<a href="" class="primaryButton">Primary</a>
-
-		</div><!--closes grid-col-1of2-->
-	</div>
-
-<pre>
-&lt;div class="grid-row">
-	&lt;div class="grid-col-1of2">
-		&lt;img src="img/perfume_rose.jpg">
-	&lt;/div><!--closes grid-col-1of2-->
-
-	&lt;div class="grid-col-1of2">
-
-		&lt;h1 class="brandH1">Product Name&lt;/h1>
-		&lt;h1 class="brandH1">$123.45&lt;/h1>
-		&lt;ul>
-			&lt;li>A brief description of what this is&lt;/li>
-			&lt;li>Some more details&lt;/li>
-			&lt;li>Even more details&lt;/li>
-		&lt;/ul>
-
-		&lt;div class="grid-row">
-			&lt;a href="#" class="buttonGroup">1&lt;/a>
-			&lt;a href="#" class="buttonGroup">2&lt;/a>
-			&lt;a href="#" class="buttonGroup">3&lt;/a>
-		&lt;/div><!--closes grid-row-->
-
-		&lt;a href="" class="primaryButton">Primary&lt;/a>
-
-	&lt;/div><!--closes grid-col-1of2-->
-&lt;/div>
-</pre>
-
-	<h4>User Review Comment</h4>
-	<div class="review">
-		<div class="grid-row">
-			<!-- Username -->
-			<div class="grid-col-4of12">
-				<h3>username</h3> 
+				<div class="grid-col-1of2">
+					<figure class="item">
+						<a href="#"><img src="img/perfume_rose.jpg" alt="picture of rose perfume" class="item-img"></a>
+						<figcaption>
+							<ul class="item-description">
+								<li><a href="#" class="item-link">Product Name by Brand Name</a></li>
+								<li>$123.45</li>
+							</ul>
+						</figcaption>
+					</figure>
+				</div>
 			</div>
-			<!-- user's comment -->
-			<div class="grid-col-8of12">
-				<p>
-					<strong>Comment Title</strong> - 05.04.16
-				</p>
-				<p class="review-comment">
-					User's messsage about the product.<br>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie quam at justo interdum pretium. Cras in ante neque. Nam venenatis mattis nisl, sit amet euismod erat placerat ut. Donec quis vestibulum urna. Aenean imperdiet cursus nibh in gravida.
-				</p>
+
+
+			<!-- ========== Product Details ========== -->
+			<h4>Product Details</h4>
+			<div class="grid-row">
+				<div class="grid-col-4of12">
+					<img src="img/perfume_rose.jpg" alt="picture of rose perfume" class="productDetail-img">
+				</div>
+
+				<div class="grid-col-8of12">
+					<div class="productDetails">
+
+						<a href="#" class="simpleButton btn-position">ADD TO BASKET</a>
+
+						<div class="grid-row">
+							<div class="productDetail-title">
+								<h3>Product Name</h3>
+								<p class="productDetail-brand">by Brand name</p>
+								<p>$123.45</p>
+							</div>
+						</div>
+
+						<p><strong>Details</strong></p>
+						<p class="productDetail-description">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie quam at justo interdum pretium. Cras in ante neque. Nam venenatis mattis nisl, sit amet euismod erat placerat ut. Donec quis vestibulum urna. Aenean imperdiet cursus nibh in gravida.
+						</p>
+					</div>
+
+				</div>
 			</div>
-		</div>
-	</div>
 
+			<!-- ========== User Review ========== -->
+			<h4>User Review Comment</h4>
+			<div class="review">
+				<div class="grid-row">
 
-			<h4>Grid Structure</h4>
+					<!-- Username -->
+					<div class="grid-col-3of12">
+						<h3>username</h3> 
+					</div>
+
+					<!-- user's comment -->
+					<div class="grid-col-8of12">
+						<p>
+							<strong>Comment Title</strong> - 05.04.16
+						</p>
+						<p class="review-comment">
+							User's messsage about the product. <br>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie quam at justo interdum pretium. Cras in ante neque. Nam venenatis mattis nisl, sit amet euismod erat placerat ut. Donec quis vestibulum urna. Aenean imperdiet cursus nibh in gravida.
+						</p>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- ========== Grid Structure ========== -->
+			<h2>Grid Structure</h2>
 			<section id="gridStructure">
 				<div class="grid-row">
 					<div class="grid-col-6of12">6of12</div>
@@ -188,47 +175,46 @@
 				</div>
 			</section>
 
-<pre>
-&lt;div class="grid-row">
-	&lt;div class="grid-col-6of12">6of12&lt;/div>
-	&lt;div class="grid-col-6of12">6of12&lt;/div>
-&lt;/div>
-&lt;div class="grid-row">
-	&lt;div class="grid-col-1of5">1of5&lt;/div>
-	&lt;div class="grid-col-1of5">1of5&lt;/div>
-	&lt;div class="grid-col-1of5">1of5&lt;/div>
-	&lt;div class="grid-col-1of5">1of5&lt;/div>
-	&lt;div class="grid-col-1of5">1of5&lt;/div>
-&lt;/div>
-&lt;div class="grid-row">
-	&lt;div class="grid-col-2of12">2of12&lt;/div>
-	&lt;div class="grid-col-2of12">2of12&lt;/div>
-	&lt;div class="grid-col-2of12">2of12&lt;/div>
-	&lt;div class="grid-col-6of12">6of12&lt;/div>
-&lt;/div>
-&lt;div class="grid-row">
-	&lt;div class="grid-col-3of12">3of12&lt;/div>
-	&lt;div class="grid-col-3of12">3of12&lt;/div>
-	&lt;div class="grid-col-6of12">6of12&lt;/div>
-&lt;/div>
-&lt;div class="grid-row">
-	&lt;div class="grid-col-2of12">2of12&lt;/div>
-	&lt;div class="grid-col-4of12">4of12&lt;/div>
-	&lt;div class="grid-col-4of12">4of12&lt;/div>
-	&lt;div class="grid-col-2of12">2of12&lt;/div>
-&lt;/div>
-&lt;div class="grid-row">
-	&lt;div class="grid-col-3of12">3of12&lt;/div>
-	&lt;div class="grid-col-3of12">3of12&lt;/div>
-	&lt;div class="grid-col-3of12">3of12&lt;/div>
-	&lt;div class="grid-col-3of12">3of12&lt;/div>
-&lt;/div>
-&lt;div class="grid-row">
-	&lt;div class="grid-col-12of12">12of12&lt;/div>
-&lt;/div>
-</pre>
+			<pre>
+			&lt;div class="grid-row">
+				&lt;div class="grid-col-6of12">6of12&lt;/div>
+				&lt;div class="grid-col-6of12">6of12&lt;/div>
+			&lt;/div>
+			&lt;div class="grid-row">
+				&lt;div class="grid-col-1of5">1of5&lt;/div>
+				&lt;div class="grid-col-1of5">1of5&lt;/div>
+				&lt;div class="grid-col-1of5">1of5&lt;/div>
+				&lt;div class="grid-col-1of5">1of5&lt;/div>
+				&lt;div class="grid-col-1of5">1of5&lt;/div>
+			&lt;/div>
+			&lt;div class="grid-row">
+				&lt;div class="grid-col-2of12">2of12&lt;/div>
+				&lt;div class="grid-col-2of12">2of12&lt;/div>
+				&lt;div class="grid-col-2of12">2of12&lt;/div>
+				&lt;div class="grid-col-6of12">6of12&lt;/div>
+			&lt;/div>
+			&lt;div class="grid-row">
+				&lt;div class="grid-col-3of12">3of12&lt;/div>
+				&lt;div class="grid-col-3of12">3of12&lt;/div>
+				&lt;div class="grid-col-6of12">6of12&lt;/div>
+			&lt;/div>
+			&lt;div class="grid-row">
+				&lt;div class="grid-col-2of12">2of12&lt;/div>
+				&lt;div class="grid-col-4of12">4of12&lt;/div>
+				&lt;div class="grid-col-4of12">4of12&lt;/div>
+				&lt;div class="grid-col-2of12">2of12&lt;/div>
+			&lt;/div>
+			&lt;div class="grid-row">
+				&lt;div class="grid-col-3of12">3of12&lt;/div>
+				&lt;div class="grid-col-3of12">3of12&lt;/div>
+				&lt;div class="grid-col-3of12">3of12&lt;/div>
+				&lt;div class="grid-col-3of12">3of12&lt;/div>
+			&lt;/div>
+			&lt;div class="grid-row">
+				&lt;div class="grid-col-12of12">12of12&lt;/div>
+			&lt;/div>
+			</pre>
 
-			
 		</section><!--closes combined id-->
 	</div><!--closes div-col-main-->
 
