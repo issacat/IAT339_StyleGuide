@@ -404,15 +404,16 @@ textarea{
 	max-width: 100%;
 }
 
-/* product listing */
+/*---PRODUCT LISTING---*/
 
 figure.item {
 	display: inline-block;
+	float: left;
 	/*border: 1px solid #000;*/
 }
 
 img.item-img {
-	max-width: 100%;
+	max-width: 40%;
 	max-height: 50%;
 }
 
@@ -428,4 +429,15 @@ a.item-link, a:visited.item-link {
 	color: #000;
 	text-decoration: none;
 	font-weight: bold;
+}
+
+/*---PRODUCT REVIEW---*/
+
+.review {
+	border-top: 1px solid #D9D2D5;
+	border-bottom: 1px solid #D9D2D5;
+}
+p.review-comment {
+	font-size: 0.9rem;
+	max-width: 90%;
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width", initial-scale=1.0>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<title>P01 Style Guide</title>
@@ -34,64 +34,65 @@
 			<h4>Main Navigation</h4>
 			<p>As seen on this style guide</p>
 
-<pre>	
-&lt;header>
-	&lt;div class="grid-row">
-		&lt;h1>Style Guide&lt;/h1>
-	&lt;/div><!--grid-row-->
-	&lt;div class="grid-row">
-		&lt;ul class="mainNavigation">
-			&lt;li>&lt;a href="#">Style Guide&lt;/a>&lt;/li>
-			&lt;li>&lt;a href="">Wireframes&lt;/a>&lt;/li>
-			&lt;li>&lt;a href="">Citations&lt;/a>&lt;/li>
-		&lt;/ul>
 
-		&lt;a href="" class="buyButton">Buy&lt;/a>
-	&lt;/div>
-&lt;/header>
-</pre>
-	<section>
-			<h4>Product Listing</h4>
-			<div class="grid-row">
-				<div class="grid-col-1of2">
-					<figure class="item">
-						<img src="img/perfume_rose.jpg" alt="picture of rose perfume" class="item-img">
-						<figcaption>
-							<ul class="item-description">
-								<li><a href="#" class="item-link">Product Name by Brand Name</a></li>
-								<li>$123.45</li>
-							</ul>
-						</figcaption>
-					</figure>
-				</div>
-			</section>
+	<pre>	
+	&lt;header>
+		&lt;div class="grid-row">
+			&lt;h1>Style Guide&lt;/h1>
+		&lt;/div><!--grid-row-->
+		&lt;div class="grid-row">
+			&lt;ul class="mainNavigation">
+				&lt;li>&lt;a href="#">Style Guide&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="">Wireframes&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="">Citations&lt;/a>&lt;/li>
+			&lt;/ul>
 
-			<h4>Product Details</h4>
-			<div class="grid-row">
-				<div class="grid-col-1of2">
-					<img src="img/perfume_rose.jpg" alt="picture of rose perfume">
-				</div><!--closes grid-col-1of2-->
+			&lt;a href="" class="buyButton">Buy&lt;/a>
+		&lt;/div>
+	&lt;/header>
+	</pre>
 
-				<div class="grid-col-1of2">
-
-					<h1 class="brandH1">Product Name</h1>
-					<h1 class="brandH1">$123.45</h1>
-					<ul>
-						<li>A brief description of what this is</li>
-						<li>Some more details</li>
-						<li>Even more details</li>
+	<h4>Product Listing</h4>
+	<div class="grid-row">
+		<div class="grid-col-1of5">
+			<figure class="item">
+				<a href="#"><img src="img/perfume_rose.jpg" alt="picture of rose perfume" class="item-img"></a>
+				<figcaption>
+					<ul class="item-description">
+						<li><a href="#" class="item-link">Product Name by Brand Name</a></li>
+						<li>$123.45</li>
 					</ul>
+				</figcaption>
+			</figure>
+		</div>
+	</div>
 
-					<div class="grid-row">
-						<a href="#" class="buttonGroup">1</a>
-						<a href="#" class="buttonGroup">2</a>
-						<a href="#" class="buttonGroup">3</a>
-					</div><!--closes grid-row-->
+	<h4>Product Details</h4>
+	<div class="grid-row">
+		<div class="grid-col-1of2">
+			<img src="img/perfume_rose.jpg" alt="picture of rose perfume">
+		</div><!--closes grid-col-1of2-->
 
-					<a href="" class="primaryButton">Primary</a>
+		<div class="grid-col-1of2">
 
-				</div><!--closes grid-col-1of2-->
-			</div>
+			<h1 class="brandH1">Product Name</h1>
+			<h1 class="brandH1">$123.45</h1>
+			<ul>
+				<li>A brief description of what this is</li>
+				<li>Some more details</li>
+				<li>Even more details</li>
+			</ul>
+
+			<div class="grid-row">
+				<a href="#" class="buttonGroup">1</a>
+				<a href="#" class="buttonGroup">2</a>
+				<a href="#" class="buttonGroup">3</a>
+			</div><!--closes grid-row-->
+
+			<a href="" class="primaryButton">Primary</a>
+
+		</div><!--closes grid-col-1of2-->
+	</div>
 
 <pre>
 &lt;div class="grid-row">
@@ -120,6 +121,27 @@
 	&lt;/div><!--closes grid-col-1of2-->
 &lt;/div>
 </pre>
+
+	<h4>User Review Comment</h4>
+	<div class="review">
+		<div class="grid-row">
+			<!-- Username -->
+			<div class="grid-col-4of12">
+				<h3>username</h3> 
+			</div>
+			<!-- user's comment -->
+			<div class="grid-col-8of12">
+				<p>
+					<strong>Comment Title</strong> - 05.04.16
+				</p>
+				<p class="review-comment">
+					User's messsage about the product.<br>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie quam at justo interdum pretium. Cras in ante neque. Nam venenatis mattis nisl, sit amet euismod erat placerat ut. Donec quis vestibulum urna. Aenean imperdiet cursus nibh in gravida.
+				</p>
+			</div>
+		</div>
+	</div>
+
 
 			<h4>Grid Structure</h4>
 			<section id="gridStructure">
