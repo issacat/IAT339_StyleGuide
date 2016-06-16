@@ -402,6 +402,18 @@ textarea{
 	max-width: 100%;
 }
 
+hr {
+	width: 100%;
+}
+
+p.breadcrumbs {
+	font-size: 0.95rem;
+}
+
+p.breadcrumbs a {
+	text-decoration: none;
+}
+
 /*---PRODUCT LISTING---*/
 
 figure.item {
@@ -485,22 +497,4 @@ p.small-txt {
 
 .dropdown-qty {
 	background-color: transparent;
-}
-
-/*--- MEDIA QUERIES ---*/
-
-@media (min-width: 80em){
-	form {
-		width: 75%;
-	}
-
-	input[type="text"]{
-		width: 75%;
-	}
-
-	textarea{
-		width: 75%;
-		max-width: 100%;
-	}
-
 }
