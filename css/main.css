@@ -422,7 +422,6 @@ figure.item {
 
 img.item-img {
 	max-width: 100%;
-	padding: 3rem;
 }
 
 figcaption.item-description {
@@ -431,8 +430,6 @@ figcaption.item-description {
 	font-size: 0.9rem;
 	float: left;
 	position: relative;
-	bottom: 3rem;
-	left: 3rem;
 }
 
 a.item-link, a:visited.item-link {
@@ -487,7 +484,7 @@ p.small-txt {
 /*--- SHOPPING CART ---*/
 
 .basket-img {
-	max-width: 90%;
+	max-width: 100%;
 	padding: 0.5rem;
 }
 
@@ -495,6 +492,16 @@ p.small-txt {
 	border-bottom: 1px solid #D9D2D5;
 }
 
-.dropdown-qty {
+.transparent-bg {
 	background-color: transparent;
+}
+
+#price-width {
+	max-width: 100%;
+}
+
+select {
+	margin: 0;
+	padding: 0.5rem 1em;
+	text-align: left;
 }
