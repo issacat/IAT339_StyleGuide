@@ -206,7 +206,8 @@ h2.brandH2{
 h3.brandH3{
 	font-family: "Coves_Light";
 	font-size: 1.5rem;
-	margin-top: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 p, ol, ul{
@@ -370,10 +371,12 @@ input[type="submit"]{
 	padding: 0.5rem 1.5rem 0.5rem 1.5rem;
 	border-style: solid;
 	border-color: #153559;
+	border-width: 0.1em;
 	color: #153559;
 	font-family: "Coves_Light";
 	font-weight: bold;
 	font-size: 1.1rem;
+	margin-top: 0.5em;
 }
 
 input[type="submit"]:hover{
@@ -389,7 +392,7 @@ form {
 }
 
 input[type="text"]{
-	width: 75%;
+	width: 100%;
 	height: 1.75rem;
 }
 
@@ -403,7 +406,7 @@ label{
 
 textarea{
 	height: auto;
-	min-width: 75%;
+	width: 100%;
 	max-width: 100%;
 }
 
@@ -471,4 +474,19 @@ p.productDetail-description, p.productDetail-brand {
 p.review-comment {
 	font-size: 0.9rem;
 	max-width: 90%;
+}
+
+@media (min-width: 80em){
+	form {
+		width: 75%;
+	}
+
+	input[type="text"]{
+		width: 75%;
+	}
+
+	textarea{
+		width: 75%;
+		max-width: 100%;
+	}
 }
