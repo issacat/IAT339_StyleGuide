@@ -49,6 +49,10 @@
 	width: 33%;
 }
 
+.grid-col-6of12{
+	width: 49%;
+}
+
  .grid-col-8of12{
 	width: 66.5%;
 }

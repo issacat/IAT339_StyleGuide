@@ -452,7 +452,12 @@ img.productDetail-img {
 	max-width: 100%;
 }
 
-p.productDetail-description, p.productDetail-brand {
+p.productDetail-brand {
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+p.productDetail-description {
 	font-size: 0.9rem;
 	max-width: 80%;
 }
@@ -471,10 +476,29 @@ p.productDetail-description, p.productDetail-brand {
 	border-top: 1px solid #D9D2D5;
 	border-bottom: 1px solid #D9D2D5;
 }
-p.review-comment {
+
+p.small-txt {
 	font-size: 0.9rem;
 	max-width: 90%;
 }
+
+
+/*--- SHOPPING BASKET ---*/
+
+.basket-img {
+	max-width: 90%;
+	padding: 0.5rem;
+}
+
+.border {
+	border-bottom: 1px solid #D9D2D5;
+}
+
+.dropdown-qty {
+	background-color: transparent;
+}
+
+/*--- MEDIA QUERIES ---*/
 
 @media (min-width: 80em){
 	form {
