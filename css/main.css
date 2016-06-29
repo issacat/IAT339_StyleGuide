@@ -30,6 +30,7 @@ code {
 	display: block;
 }
 
+
 /*---- NAVIGATION ----*/
 header{
 	background-color: #153559;
@@ -151,6 +152,40 @@ ul.navigation a:hover{
 }
 /*---- END NAVIGATION ----*/
 
+/* ----- BRAND COLORS ------ */
+
+[class^='colour'] {
+	height: 5em;
+	width: 100%;
+}
+
+[class^='colour']:active{
+	border-style: solid;
+	border-width: 0.5em;
+	border-color: black;
+}
+
+.colour1{
+	background-color: #153559;
+}
+
+.colour2{
+	background-color: #D9D2D5;
+}
+
+.colour3{
+	background-color: #D1BAC4;
+}
+
+.colour4{
+	background-color: #FFD54F;
+}
+
+.colour5{
+	background-color: #67804A;
+}
+
+/*----- END BRAND COLORS ---*/
 /*---- TEXT STYLING ----*/
 h1{
 	font-family: "Butler";
@@ -212,7 +247,7 @@ p{
 section {
 	max-width: 100%;
 	padding: 1rem 0em;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #666;
 }
 
 h1{
@@ -289,7 +324,6 @@ p a:hover{
 	text-align: center;
 	top: 0.1rem;
 	padding: 1.5em;
-	width: 10%;
 }
 /* End simple button */
 
@@ -391,49 +425,18 @@ textarea{
 /* End Forms */
 
 
+/* --- Extra styles -- */
+
 hr {
 	width: 100%;
+	color: #eee;
+	height: 1px;
 }
 
 img{
 	max-width: 100%;
 	height: auto;
 }
-
-
-/* ----- Brand Colors ------ */
-
-[class^='colour'] {
-	height: 5em;
-	width: 100%;
-}
-
-[class^='colour']:active{
-	border-style: solid;
-	border-width: 0.5em;
-	border-color: black;
-}
-
-.colour1{
-	background-color: #153559;
-}
-
-.colour2{
-	background-color: #D9D2D5;
-}
-
-.colour3{
-	background-color: #D1BAC4;
-}
-
-.colour4{
-	background-color: #FFD54F;
-}
-
-.colour5{
-	background-color: #67804A;
-}
-
 
 
 
