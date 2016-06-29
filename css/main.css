@@ -222,6 +222,7 @@ a h2.h2-alt:hover {
 }
 
 h3{
+	font-family: "Butler";
 	font-size: 1.4rem;
 	margin: 0;
 }
@@ -516,7 +517,19 @@ a h2.h2-alt:hover {
 	padding: 1.1em 0em 2em 0em;
 }
 
+.link, .link:visited, .link:focus {
+	font-size: 1rem;
+	color: #600c82;
+	letter-spacing: 0.05em;
+	text-decoration: underline;
 
+	-webkit-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+.link:hover {
+	color: #ffbe00;
+}
 
 
 /*--- SHOPPING CART ---*/
