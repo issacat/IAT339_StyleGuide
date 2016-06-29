@@ -25,7 +25,8 @@ body{
 code {
 	font-family: monospace;
 	background-color: #F0F0F0;
-	padding: 1em;
+	margin: 1.2rem 0;
+	padding: 1.5em;
 	display: block;
 }
 
@@ -67,6 +68,7 @@ ul.mainNavigation{
 	margin: 0;
 	margin-left: 5%;
 	padding-top: 1.5em;
+	list-style-type: none;
 }
 
 ul.mainNavigation a{
@@ -147,6 +149,7 @@ ul.navigation a:hover{
 	color: #ffe8a0;
 }
 
+
 h1{
 	font-family: "Butler";
 	margin-top: 2rem;
@@ -156,7 +159,7 @@ h1{
 
 h2{
 	font-family: "Butler";
-	font-size: 2.5rem;
+	font-size: 1.8rem;
 	margin-top: 2rem;
 }
 
@@ -181,7 +184,9 @@ a h2.h2-alt:hover {
 }
 
 h3{
-	font-size: 1.5rem;
+	font-family: "Butler";
+	font-size: 1.4rem;
+	margin: 0;
 }
 
 h3.h3-alt-style {
@@ -193,7 +198,190 @@ h3.h3-alt-style {
 }
 
 h4{
-	margin-top: 2rem;
+	font-size: 1.1rem;
+}
+
+p{
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+	margin-top: 0;
+}
+
+section {
+	max-width: 100%;
+	padding: 1em;
+	border-bottom: 1px solid #eee;
+}
+
+h1{
+	font-family: "Butler";
+	font-size: 2.5rem;
+	margin-top: 0;
+}
+
+h2{
+	font-family: "Butler";
+	font-size: 2rem;
+	margin-top: 0;
+}
+
+h3{
+	font-family: "Lato";
+	font-size: 1.5rem;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+p, ol, ul{
+	font-size: 1.0em;
+	margin: 0;
+	max-width: 65%;
+}
+
+ol{
+	padding-left: 0;
+}
+
+
+ul{
+	padding-left: 0;
+}
+
+ol li,
+ul li{
+	padding-bottom: 0.5rem;
+	list-style-position: inside;
+}
+
+p a{
+	color: #4C5C7D;
+	font-weight: bold;
+}
+
+p a:hover{
+	color: #B5849A;
+}
+
+/* End text elements*/
+/* Simple Button style */
+.simpleButton{
+	font-weight: bold;
+	text-decoration: none;
+	color: #4C5C7D;
+	border-style: solid;
+	border-width: 0.1rem;
+	border-radius: 1rem;
+
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+
+.simpleButton:hover{
+	background-color: #D9D2D5;
+}
+
+.btn-position {
+	display: block;
+	position: relative;
+	text-align: center;
+	top: 0.1rem;
+	padding: 1.5em;
+	width: 10%;
+}
+
+/* End simple button */
+
+ul.pagination{
+	font-size: 1.25rem;
+	display: inline-block;
+	margin-top: 1rem;
+}
+
+ul.pagination li{
+	display: inline;
+}
+
+ul.pagination li a{
+	text-decoration: none;
+	color: #153559;
+	padding: 1rem;
+	border-radius: 0.5rem;
+
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+
+ul.pagination li a:hover{
+	background-color: #D9D2D5;
+}
+
+a.buttonGroup{
+	/*padding: 1.25rem 1.75rem 1.25rem 1.75rem;*/
+	/*margin-bottom: 2rem;*/
+	text-decoration: none;
+	color: #153559;
+	background-color: #D9D2D5;
+	border-color: #BFB8BB;
+	border-style: solid;
+	border-width: 0.1rem;
+
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+
+a.buttonGroup:hover{
+	background-color: #4C5C7D;
+	color: white;
+}
+
+
+input[type="submit"]{
+	background-color: #fff;
+	padding: 1rem 1.5rem;
+	border-style: solid;
+	border-color: #153559;
+	border-width: 0.1em;
+	color: #153559;
+	font-weight: bold;
+	font-size: 1.1rem;
+	margin-top: 0.5em;
+}
+
+input[type="submit"]:hover{
+	color: #4C5C7D;
+	border-color: #4C5C7D;
+}
+
+form {
+	display: inline-block;
+	padding: 1em;
+	width: 100%;
+}
+
+input[type="text"]{
+	width: 100%;
+	height: 2rem;
+}
+
+label{
+	display: block;
+	margin-bottom: 0.25rem;
+	margin-top: 1.25rem;
+}
+
+label:first-of-type{
+	margin-top: 0;
+}
+
+textarea{
+	height: auto;
+	width: 100%;
+	max-width: 100%;
+}
+
+
+hr {
+	width: 100%;
 }
 
 img{
@@ -201,13 +389,8 @@ img{
 	height: auto;
 }
 
-p{
-	font-family: 'Lato', sans-serif;
-	font-size: 1.5em;
-	margin-top: 0;
-	margin-bottom: 3rem;
-}
 
+/* ----- Brand Colors ------ */
 
 [class^='colour'] {
 	height: 5em;
@@ -240,236 +423,12 @@ p{
 	background-color: #67804A;
 }
 
-h1{
-	font-family: "Butler";
-	font-size: 2.5rem;
-	margin-top: 0;
-}
-
-h2{
-	font-family: "Butler";
-	font-size: 2rem;
-	margin-top: 0;
-}
-
-h3{
-	font-family: "Lato";
-	font-size: 1.5rem;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-p, ol, ul{
-	font-family: 'Lato', sans-serif;
-	max-width: 75%;
-	font-size: 1.2rem;
-}
-
-ol{
-	padding-left: 0;
-}
 
 
-ul{
-	list-style-type: none;
-	padding-left: 0;
-}
 
-ol li,
-ul li{
-	padding-bottom: 0.5rem;
-	list-style-position: inside;
-}
 
-p a{
-	color: #4C5C7D;
-	font-weight: bold;
-}
 
-p a:hover{
-	color: #B5849A;
-}
 
-[class^='primary'] {
-	color: #fff;
-	background-color: #153559;
-	text-decoration: none;
-	margin-top: 1rem;
-}
-
-.simpleButton{
-	margin-top: 1rem;
-	font-family: "Coves_Light";
-	font-weight: bold;
-	padding: 1rem;
-	margin-right: 0.5rem;
-	text-decoration: none;
-	color: #4C5C7D;
-	border-style: solid;
-	border-width: 0.1rem;
-	border-radius: 1rem;
-
-	-webkit-transition: background-color 0.5s;
-	transition: background-color 0.5s;
-}
-
-.simpleButton:hover{
-	background-color: #D9D2D5;
-}
-
-.primaryButton{
-	font-family: "Coves_Light";
-	font-weight: bold;
-	padding: 1rem;
-	border-style: solid;
-	border-width: 0.1rem;
-	border-radius: 1rem;
-
-	-webkit-transition: background-color 0.5s;
-	transition: background-color 0.5s;
-}
-
-.primaryButton:hover{
-	background-color: #4C5C7D;
-}
-
-.bigButton{
-	margin-top: 1rem;
-	font-family: "Coves_Light";
-	font-weight: bold;
-	padding: 1.5rem;
-	margin-right: 0.5rem;
-	font-size: 1.5rem;
-	text-decoration: none;
-	color: #153559;
-	border-style: solid;
-	border-width: 0.1rem;
-	border-radius: 1rem;
-
-	-webkit-transition: background-color 0.5s;
-	transition: background-color 0.5s;
-}
-
-.bigButton:hover{
-	background-color: #D9D2D5;
-}
-
-.primaryBig{
-	font-family: "Coves_Light";
-	padding: 1.5rem;
-	font-size: 1.5rem;
-	font-weight: bold;
-	border-style: solid;
-	border-width: 0.1rem;
-	border-radius: 1rem;
-
-	-webkit-transition: background-color 0.5s;
-	transition: background-color 0.5s;
-}
-
-.primaryBig:hover{
-	background-color: #4C5C7D;
-}
-
-ul.pagination{
-	font-family: "Coves_Light";
-	font-size: 1.25rem;
-	display: inline-block;
-	margin-top: 2rem;
-}
-
-ul.pagination li{
-	display: inline;
-}
-
-ul.pagination li a{
-	text-decoration: none;
-	color: #153559;
-	padding: 1rem;
-	border-radius: 0.5rem;
-
-	-webkit-transition: background-color 0.5s;
-	transition: background-color 0.5s;
-}
-
-ul.pagination li a:hover{
-	background-color: #D9D2D5;
-}
-
-a.buttonGroup{
-	padding: 1.25rem 1.75rem 1.25rem 1.75rem;
-	margin-bottom: 2rem;
-	text-decoration: none;
-	color: #153559;
-	background-color: #D9D2D5;
-	border-color: #BFB8BB;
-	border-style: solid;
-	border-width: 0.1rem;
-
-	-webkit-transition: background-color 0.5s;
-	transition: background-color 0.5s;
-}
-
-a.buttonGroup:hover{
-	background-color: #4C5C7D;
-	color: white;
-}
-
-input[type="submit"]{
-	background-color: #fff;
-	padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-	border-style: solid;
-	border-color: #153559;
-	border-width: 0.1em;
-	color: #153559;
-	font-family: "Coves_Light";
-	font-weight: bold;
-	font-size: 1.1rem;
-	margin-top: 0.5em;
-}
-
-input[type="submit"]:hover{
-	color: #4C5C7D;
-	border-color: #4C5C7D;
-}
-
-form {
-	display: inline-block;
-	background-color: #D9D2D5;
-	padding: 1em;
-	width: 100%;
-}
-
-input[type="text"]{
-	width: 100%;
-	height: 1.75rem;
-}
-
-label{
-	display: block;
-	font-family: "Coves_Light";
-	font-size: 1.2rem;
-	margin-bottom: 0.25rem;
-	margin-top: 0.75rem;
-}
-
-textarea{
-	height: auto;
-	width: 100%;
-	max-width: 100%;
-}
-
-hr {
-	width: 100%;
-}
-
-p.breadcrumbs {
-	font-size: 0.95rem;
-}
-
-p.breadcrumbs a {
-	text-decoration: none;
-}
 
 /*---PRODUCT LISTING---*/
 
@@ -510,13 +469,6 @@ p.productDetail-brand {
 	margin-top: 0.5em;
 	font-size: 1em;
 	font-weight: bold;
-}
-
-.btn-position {
-	display: block;
-	position: relative;
-	bottom: 1em;
-	left: 0.25em;
 }
 
 .h3-position {
