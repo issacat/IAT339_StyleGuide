@@ -90,6 +90,7 @@ ul.mainNavigation a:hover{
 
 /*for the links on the right side of the navigation bar*/
 ul.sideButtons{
+	list-style-type: none;
 	position: absolute;
 	display: flex;
 	flex-direction: row;
@@ -135,6 +136,7 @@ ul.navigation{
 	flex-direction: column;
 	list-style: none;
 	text-align: right;
+	font-size: 1.2rem;
 }
 
 ul.navigation a{
@@ -197,7 +199,6 @@ h1{
 h2{
 	font-family: "Butler";
 	font-size: 1.8rem;
-	margin-top: 2rem;
 }
 
 h2.h2-alt {
@@ -221,7 +222,6 @@ a h2.h2-alt:hover {
 }
 
 h3{
-	font-family: "Butler";
 	font-size: 1.4rem;
 	margin: 0;
 }
@@ -250,25 +250,6 @@ section {
 	border-bottom: 1px solid #666;
 }
 
-h1{
-	font-family: "Butler";
-	font-size: 2.5rem;
-	margin-top: 0;
-}
-
-h2{
-	font-family: "Butler";
-	font-size: 2rem;
-	margin-top: 0;
-}
-
-h3{
-	font-family: "Lato";
-	font-size: 1.5rem;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
 p, ol, ul{
 	font-size: 1.0em;
 	margin: 0;
@@ -281,6 +262,8 @@ ol{
 
 
 ul{
+	list-style-type: none;
+	margin: 0;
 	padding-left: 0;
 }
 
@@ -320,10 +303,11 @@ p a:hover{
 
 .btn-position {
 	display: block;
-	position: relative;
+
 	text-align: center;
-	top: 0.1rem;
+	top: 0em;
 	padding: 1.5em;
+	width: 95%;
 }
 /* End simple button */
 
@@ -438,9 +422,11 @@ img{
 	height: auto;
 }
 
-
-
-
+.justify-right {
+	position: relative;
+	float: right;
+	text-align: right;
+}
 
 
 
@@ -448,18 +434,29 @@ img{
 
 figure.item {
 	margin: 0;
+	margin-bottom: 5em;
 }
 
 img.item-img {
 	max-width: 100%;
+	padding: 0em 2em 0em 2em;
+
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
 }
 
-figcaption.item-description {
+.item img:hover {
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+	opacity: 0.5;
+}
+
+.item-description {
+	text-align: left;
 	margin: 0;
-	font-family: "Coves_Light";
 	font-size: 0.9rem;
 	float: left;
 	position: relative;
+	padding: 0em 3em 0em 2.2em;
 }
 
 a.item-link, a:visited.item-link {
@@ -470,61 +467,74 @@ a.item-link, a:visited.item-link {
 
 
 /*---PRODUCT DETAILS---*/
-
-.productDetails {
-	padding-left: 2rem;
+.padding-1em {
+	padding-top: 2em;
 }
 
-img.productDetail-img {
+.padding-1em-left {
+	padding-left: 2em;
+}
+
+.padding-2em {
+	padding-top: 2em;
+}
+
+.h3-alt-style {
+	font-size: 1.2em;
+	color: #33560a;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 0.1em;
+}
+
+h2.h2-alt {
+	background-color: #122336;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 1.2rem;
+	color: #ffe8a0;
+	padding: 1.2rem;
+	text-align: center;
 	max-width: 100%;
+	margin-top: 0.75rem;
+	margin-bottom: 0.75rem;
+
+	-webkit-transition: background-color 0.5s ease-in;
+	transition: background-color 0.5s ease-in; 
 }
 
-p.productDetail-brand {
-	margin-top: 0.5em;
-	font-size: 1em;
-	font-weight: bold;
+a h2.h2-alt:hover {
+	background-color: #5d91a9;
 }
 
-.h3-position {
-	margin: 0;
-	padding-right: 8em;
-}
 
 
 /*---PRODUCT REVIEW---*/
 
 .review {
-	border-top: 1px solid #D9D2D5;
 	border-bottom: 1px solid #D9D2D5;
+	padding: 1.1em 0em 2em 0em;
 }
 
-p.small-txt {
-	font-size: 0.9rem;
-	max-width: 90%;
-}
+
 
 
 /*--- SHOPPING CART ---*/
 
-.basket-img {
-	max-width: 100%;
-	padding: 0.5rem;
+.cart-img {
+	padding: 1em 0em 1em 0em;
 }
 
-.border {
+.border-thick {
+	border-bottom: 5px solid #000;
+	padding-bottom: 0.75em;
+}
+
+.border-thin {
 	border-bottom: 1px solid #D9D2D5;
 }
 
-.transparent-bg {
-	background-color: transparent;
-}
-
-#price-width {
-	max-width: 100%;
-}
-
 select {
-	margin: 0;
-	padding: 0.5rem 1em;
-	text-align: left;
+	padding: 1em 1.5rem;
+	position: relative;
 }
