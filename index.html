@@ -8,11 +8,11 @@
 	<title>P01 Style Guide</title>
 </head>
 <body>
+
 	<header>
 		<div class="grid-row">
-			<a href="#" class="navName"><h1>Style Guide</h1></a>
-		</div><!--grid-row-->
-		<div class="grid-row">
+			<a href="index.html" class="navName"><h1>style guide</h1></a>
+			
 			<ul class="mainNavigation">
 				<li><a href="index.html">Style Guide</a></li>
 				<li><a href="Wireframes/home.html">Wireframes</a></li>
@@ -20,9 +20,14 @@
 				<li><a href="combinedElements.html">Combined</a></li>
 			</ul>
 
-			<a href="" class="buyButton">Buy</a>
+			<ul class="sideButtons">
+				<li><a href="login.html" class="buyButton">Login</a></li>
+				<li><a href="shoppingCart.html" class="shoppingCartButton"><img src="img/icon-shoppingCart-white.png" alt="shopping cart button"></a></li>
+			</ul>
+			
 		</div>
 	</header>
+
 
 	<ul class="navigation">
 		<li><a href="#branding">Branding</a></li>
@@ -31,66 +36,70 @@
 	</ul>
 
 	<div class="grid-col-main">
+
 		<section id="branding">
 			<h2>Branding</h2>
 
 			<h3>Colours</h3>
 
-			<h4>Primary Colours</h4>
 			<div class="grid-row">
-				<div id="main_colour"></div>
-				<div id="main_colour_02"></div>
+				<div class="grid-col-1of5">
+					<div class = "colour1"> </div>
+				</div>
+				<div class="grid-col-1of5">
+					<div class = "colour2"> </div>
+				</div>	
+				<div class="grid-col-1of5">
+					<div class = "colour3"> </div>
+				</div>
+				<div class="grid-col-1of5">
+					<div class = "colour4"> </div>
+				</div>
+				<div class="grid-col-1of5">
+					<div class = "colour5"> </div>
+				</div>
 			</div>
 
-			<h4>Secondary Colour</h4>
-			<div id="secondary_colour"></div>
-
-			<h4>Accent Colour</h4>
-			<div class="grid-row">
-				<div id="accent_colour"></div>
-				<div id="accent_colour_02"></div>
-			</div>
-
-			<h3>Typography</h3>
-
-			<h4>Display Font</h4>
-			<h1 class="display">Butler</h1>
-
-			<h4>Body Font</h4>
-			<p class = "body">Coves</p>
 
 		</section><!--closes id branding-->
 
 		<section id="textStyling">
-			<h2>Textual Styling</h2>
-			<h4>h1 Title Heading</h4>
-			<h1 class="brandH1">This is a h1</h1>
-<pre>
-&lt;h1 class="brandH1">This is a h1&lt;/h1>
-</pre>
-			<h4>h2 Subheading</h4>
-			<h2 class="brandH2">This is a h2</h2>
-<pre>
-&lt;h2 class="brandH2">This is a h2&lt;/h2>
-</pre>
-			<h4>h3 Small Heading</h4>
+
+
+			<h3>Typography</h3>
+
+			<h1>This is a h1</h1>
+
+			<code>
+			&lt;h1>This is a h1&lt;/h1>
+			</code>
+
+			<h2>This is a h2</h2>
+			<h2 class="h2-alt">ALTERNATE H2 STYLE</h2>
+
+			<code>
+			&lt;h2 class="brandH2">This is a h2&lt;/h2>
+			</code>
+				
 			<h3 class="brandH3">This is a h3</h3>
-<pre>
-&lt;h3 class="brandH3">This is a h3&lt;/h3>
-</pre>
+			<h3 class="h3-alt-style">Alternate h3 style</h3>
+
+			<code>
+			&lt;h3 class="brandH3">This is a h3&lt;/h3>
+			</code>
 
 			<h4>Paragraphs</h4>
 			<p>
-				<em>This is what a paragraph looks like.</em> Bacon ipsum dolor amet kevin swine bresaola, tenderloin salami frankfurter beef tri-tip doner kielbasa ham ground round sirloin sausage pork chop. Landjaeger shank shoulder spare ribs ribeye. Fatback meatball biltong tenderloin, jowl swine pork loin meatloaf t-bone. Swine flank ground round picanha.
+				<strong>This is what a paragraph looks like.</strong> Bacon ipsum dolor amet kevin swine bresaola, tenderloin salami frankfurter beef tri-tip doner kielbasa ham ground round sirloin sausage pork chop. Landjaeger shank shoulder spare ribs ribeye. Fatback meatball biltong tenderloin, jowl swine pork loin meatloaf t-bone. Swine flank ground round picanha.
 
 				Drumstick tail pancetta, shank boudin leberkas pastrami bacon alcatra salami brisket short ribs. Ham jerky turducken picanha flank. Ball tip ham hock flank doner capicola. Shoulder meatball ham hock, ham bresaola venison rump pork chop tenderloin chicken.
 			</p>
 
-<pre>
-&lt;p>
-	&lt;em>This is what a paragraph looks like.&lt;/em> Bacon impsum.....
-&lt;/p>
-</pre>
+			<code>
+				&lt;p>
+				&lt;em>This is what a paragraph looks like.&lt;/em> Bacon impsum.....
+				&lt;/p>
+			</code>
 
 			<h4>Ordered List</h4>
 			<ol>
@@ -99,13 +108,13 @@
 				<li>Venison sirloin ribeye beef ribs</li>
 			</ol>
 
-<pre>
-&lt;ol>
-	&lt;li>This is an ordered list&lt;/li>
-	&lt;li>ground round picanha&lt;/li>
-	&lt;li>Venison sirloin ribeye beef ribs&lt;/li>
-&lt;/ol>
-</pre>
+			<code>
+				&lt;ol>
+					&lt;li>This is an ordered list&lt;/li>
+					&lt;li>ground round picanha&lt;/li>
+					&lt;li>Venison sirloin ribeye beef ribs&lt;/li>
+				&lt;/ol>
+			</code>
 
 			<h4>Unordered List</h4>
 			<ul>
@@ -114,13 +123,13 @@
 				<li>Venison sirloin ribeye beef ribs</li>
 			</ul>
 
-<pre>
-&lt;oul>
-	&lt;li>This is an unordered list&lt;/li>
-	&lt;li>ground round picanha&lt;/li>
-	&lt;li>Venison sirloin ribeye beef ribs&lt;/li>
-&lt;/ul>
-</pre>
+			<code>
+				&lt;oul>
+					&lt;li>This is an unordered list&lt;/li>
+					&lt;li>ground round picanha&lt;/li>
+					&lt;li>Venison sirloin ribeye beef ribs&lt;/li>
+				&lt;/ul>
+			</code>
 
 
 		</section><!--closes the textStyling id-->
@@ -132,44 +141,21 @@
 			<p>
 				Bacon ipsum dolor amet kevin swine bresaola, tenderloin salami frankfurter beef tri-tip doner kielbasa ham ground round sirloin sausage pork chop. <a href="">This is what a in-text link looks like. </a> Landjaeger shank shoulder spare ribs ribeye. Fatback meatball biltong tenderloin, jowl swine pork loin meatloaf t-bone. Swine flank ground round picanha.
 			</p>
-<pre>
-&lt;a href="">This is what a in-text link looks like. &lt;/a>
-</pre>
+
+			<code>
+			&lt;a href="">This is what a in-text link looks like. &lt;/a>
+			</code>
+
 			<h4>Navigation Buttons</h4>
 			<div class="grid-row">
 				<a href="" class="simpleButton">Simple</a>
-				<a href="" class="primaryButton">Primary</a>
 			</div><!--closes grid-row-->
 
-<pre>
-&lt;a href="" class="simpleButton">Simple&lt;/a>
-&lt;a href="" class="primaryButton">Primary&lt;/a>
-</pre>
-
-			<div class="grid-row">
-				<a href="" class="bigButton">Big Button</a>
-				<a href="" class="primaryBig">Big Primary</a>
-			</div><!--closes grid-row-->
-
-<pre>
-&lt;a href="" class="bigButton">Big Button&lt;/a>
-&lt;a href="" class="primaryBig">Big Primary&lt;/a>
-</pre>
+			<code>
+			&lt;a href="" class="simpleButton">Simple&lt;/a>
+			</code>
 
 			<h5>Button Group</h5>
-			<div class="grid-row">
-				<a href="" class="buttonGroup">1</a>
-				<a href="" class="buttonGroup">2</a>
-				<a href="" class="buttonGroup">3</a>
-			</div><!--closes grid-row-->
-
-<pre>
-&lt;div class="grid-row">
-	&lt;a href="" class="buttonGroup">1&lt;/a>
-	&lt;a href="" class="buttonGroup">2&lt;/a>
-	&lt;a href="" class="buttonGroup">3&lt;/a>
-&lt;/div><!--closes grid-row-->
-</pre>
 
 			<ul class="pagination">
 			  <li><a href="#">«</a></li>
@@ -181,25 +167,25 @@
 			  <li><a href="#">»</a></li>
 			</ul>
 
-<pre>
-&lt;ul class="pagination">
-  &lt;li>&lt;a href="#">«&lt;/a>&lt;/li>
-  &lt;li>&lt;a href="#">1&lt;/a>&lt;/li>
-  &lt;li>&lt;a href="#">2&lt;/a>&lt;/li>
-  &lt;li>&lt;a href="#">3&lt;/a>&lt;/li>
-  &lt;li>&lt;a href="#">4&lt;/a>&lt;/li>
-  &lt;li>&lt;a href="#">5&lt;/a>&lt;/li>
-  &lt;li>&lt;a href="#">»&lt;/a>&lt;/li>
-&lt;/ul>
-</pre>
+			<code>
+			&lt;ul class="pagination">
+			  &lt;li>&lt;a href="#">«&lt;/a>&lt;/li>
+			  &lt;li>&lt;a href="#">1&lt;/a>&lt;/li>
+			  &lt;li>&lt;a href="#">2&lt;/a>&lt;/li>
+			  &lt;li>&lt;a href="#">3&lt;/a>&lt;/li>
+			  &lt;li>&lt;a href="#">4&lt;/a>&lt;/li>
+			  &lt;li>&lt;a href="#">5&lt;/a>&lt;/li>
+			  &lt;li>&lt;a href="#">»&lt;/a>&lt;/li>
+			&lt;/ul>
+			</code>
 
 
 			<h4>Form Buttons</h4>
 			<input type="submit" value="Submit">
 
-<pre>
-&lt;input type="submit" value="Submit">	
-</pre>
+			<code>
+			&lt;input type="submit" value="Submit">	
+			</code>
 
 
 			<h4>Input Field</h4>
@@ -211,15 +197,15 @@
 				<textarea id="form-comment" placeholder="Write your comments here" rows="10"></textarea>
 			</form>
 
-<pre>
-&lt;form method="post" action="#">
-	&lt;label for="form-name">Name:&lt;/label>
-	&lt;input type="text" id="form-name" placeholder="Issaca Tsang">
+			<code>
+			&lt;form method="post" action="#">
+				&lt;label for="form-name">Name:&lt;/label>
+				&lt;input type="text" id="form-name" placeholder="Issaca Tsang">
 
-	&lt;label for="form-comment">Comments:&lt;/label>
-	&lt;textarea id="form-comment" placeholder="Write your comments here" rows="10">&lt;/textarea>
-&lt;/form>
-</pre>
+				&lt;label for="form-comment">Comments:&lt;/label>
+				&lt;textarea id="form-comment" placeholder="Write your comments here" rows="10">&lt;/textarea>
+			&lt;/form>
+			</code>
 
 		</section><!--closes the interactiveElements id-->
 	</div><!--closes div-col-main-->
