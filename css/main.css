@@ -30,6 +30,7 @@ code {
 	display: block;
 }
 
+/*---- NAVIGATION ----*/
 header{
 	background-color: #153559;
 	position: fixed;
@@ -148,8 +149,9 @@ ul.navigation a{
 ul.navigation a:hover{
 	color: #ffe8a0;
 }
+/*---- END NAVIGATION ----*/
 
-
+/*---- TEXT STYLING ----*/
 h1{
 	font-family: "Butler";
 	margin-top: 2rem;
@@ -209,7 +211,7 @@ p{
 
 section {
 	max-width: 100%;
-	padding: 1em;
+	padding: 1rem 0em;
 	border-bottom: 1px solid #eee;
 }
 
@@ -261,8 +263,9 @@ p a{
 p a:hover{
 	color: #B5849A;
 }
+/*---- End TEXT STYLING ----*/
 
-/* End text elements*/
+
 /* Simple Button style */
 .simpleButton{
 	font-weight: bold;
@@ -288,9 +291,9 @@ p a:hover{
 	padding: 1.5em;
 	width: 10%;
 }
-
 /* End simple button */
 
+/* Pagination buttons */
 ul.pagination{
 	font-size: 1.25rem;
 	display: inline-block;
@@ -316,8 +319,6 @@ ul.pagination li a:hover{
 }
 
 a.buttonGroup{
-	/*padding: 1.25rem 1.75rem 1.25rem 1.75rem;*/
-	/*margin-bottom: 2rem;*/
 	text-decoration: none;
 	color: #153559;
 	background-color: #D9D2D5;
@@ -333,8 +334,9 @@ a.buttonGroup:hover{
 	background-color: #4C5C7D;
 	color: white;
 }
+/* End pagination */
 
-
+/* Submit button */
 input[type="submit"]{
 	background-color: #fff;
 	padding: 1rem 1.5rem;
@@ -351,11 +353,19 @@ input[type="submit"]:hover{
 	color: #4C5C7D;
 	border-color: #4C5C7D;
 }
+/* End Submit */
 
+/* --------- Forms ---------- */
 form {
 	display: inline-block;
 	padding: 1em;
 	width: 100%;
+}
+
+.form-style {
+	padding: 2em;
+	margin-bottom: 1em;
+	border: 1.5em solid #e2e4f3;
 }
 
 input[type="text"]{
@@ -378,6 +388,7 @@ textarea{
 	width: 100%;
 	max-width: 100%;
 }
+/* End Forms */
 
 
 hr {

@@ -144,7 +144,7 @@
 
 /* ======= MEDIA QUERIES ======= */
 
-@media (min-width: 80em){
+/*@media (min-width: 80em){
 	form {
 		width: 75%;
 	}
@@ -158,7 +158,7 @@
 		max-width: 100%;
 	}
 }
-
+*/
 @media (max-width: 80em){
 
 	img.productDetail-img {
